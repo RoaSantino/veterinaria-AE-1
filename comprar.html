@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Veterinaria Patitas</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="listado_tabla.html">Productos (tabla)</a>
+      <a href="listado_box.html">Productos (box)</a>
+      <a href="comprar.html">Comprar</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Formulario de compra</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre del cliente</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion">
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email">
+
+      <label for="pago">Medio de pago</label>
+      <select id="pago" name="pago">
+        <option value="efectivo">Efectivo</option>
+        <option value="tarjeta">Tarjeta</option>
+        <option value="transferencia">Transferencia</option>
+      </select>
+
+      <label>Productos</label>
+      <label class="opcion"><input type="checkbox" name="productos" value="1"> Alimento perro adulto 15kg - $45.000</label>
+      <label class="opcion"><input type="checkbox" name="productos" value="2"> Alimento gato 7,5kg - $32.000</label>
+      <label class="opcion"><input type="checkbox" name="productos" value="3"> Collar antipulgas - $8.500</label>
+      <label class="opcion"><input type="checkbox" name="productos" value="4"> Shampoo para mascotas - $6.200</label>
+      <label class="opcion"><input type="checkbox" name="productos" value="5"> Correa reforzada - $7.000</label>
+
+      <button type="submit">Confirmar compra</button>
+    </form>
+  </main>
+  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+</body>
+</html>

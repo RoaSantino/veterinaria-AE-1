@@ -1,0 +1,28 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; color: #333; }
+header { background: #2e7d6b; color: white; padding: 15px 20px; }
+header h1 { margin: 0 0 10px 0; }
+nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+footer { text-align: center; padding: 15px; color: #777; }
+
+/* Tabla */
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background: #2e7d6b; color: white; }
+
+/* Boxes */
+.contenedor-box { display: flex; flex-wrap: wrap; gap: 15px; }
+.box { background: white; border: 1px solid #ccc; border-radius: 8px; padding: 15px; width: 200px; text-align: center; }
+.box img { width: 100%; }
+.precio { font-weight: bold; color: #2e7d6b; }
+
+/* Ficha */
+.ficha { display: flex; gap: 20px; background: white; padding: 20px; border-radius: 8px; flex-wrap: wrap; }
+.ficha img { width: 250px; }
+
+/* Formulario */
+label { display: block; margin-top: 12px; font-weight: bold; }
+input[type=text], input[type=tel], input[type=email], select { width: 100%; padding: 8px; box-sizing: border-box; }
+.opcion { font-weight: normal; }
+button, .boton { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #2e7d6b; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer; }
