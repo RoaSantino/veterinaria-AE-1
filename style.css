@@ -26,3 +26,9 @@ label { display: block; margin-top: 12px; font-weight: bold; }
 input[type=text], input[type=tel], input[type=email], select { width: 100%; padding: 8px; box-sizing: border-box; }
 .opcion { font-weight: normal; }
 button, .boton { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #2e7d6b; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer; }
+
+/* Contacto */
+textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+#mensaje { margin-top: 15px; padding: 10px; display: none; }
+.exito { background: #d4edda; color: #155724; }
+.error { background: #f8d7da; color: #721c24; }

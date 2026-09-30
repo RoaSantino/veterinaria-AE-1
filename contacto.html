@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - Veterinaria Patitas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Veterinaria Patitas</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="listado_tabla.html">Productos (tabla)</a>
+      <a href="listado_box.html">Productos (box)</a>
+      <a href="comprar.html">Comprar</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Contacto y Consultas</h2>
+
+    <!-- Sin onclick ni onsubmit: los eventos se capturan en app.js -->
+    <form id="formContacto">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre">
+
+      <label for="email">Email</label>
+      <input type="email" id="email">
+
+      <label for="servicio">Servicio</label>
+      <select id="servicio">
+        <option value="Consulta general">Consulta general</option>
+        <option value="Vacunación">Vacunación</option>
+        <option value="Peluquería">Peluquería</option>
+        <option value="Cirugía">Cirugía</option>
+      </select>
+
+      <label for="consulta">Consulta</label>
+      <textarea id="consulta" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="mensaje"></div>
+  </main>
+  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+  <script src="app.js"></script>
+</body>
+</html>
