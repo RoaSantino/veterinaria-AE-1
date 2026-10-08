@@ -1,0 +1,26 @@
+digraph mapa {
+  rankdir=LR; bgcolor="white"; pad=0.2; nodesep=0.35; ranksep=0.55;
+  node [shape=box, style="rounded,filled", fillcolor="#e8f5e9", color="#2e7d32", fontname="Liberation Serif", fontsize=12];
+  edge [color="#455a64", fontname="Liberation Serif", fontsize=10];
+  inicio [label="Inicio\n(index.html)"];
+  catalogo [label="Catálogo\n(tabla / box)"];
+  ficha [label="Ficha de\nproducto"];
+  compra [label="Formulario\nde compra"];
+  subgraph cluster_contacto {
+    label="contacto.html"; fontname="Liberation Serif"; fontsize=12; color="#2e7d32"; style="rounded,dashed";
+    form [label="Formulario\nde consulta"];
+    enviando [label="Enviando\n(fetch)", fillcolor="#fff8e1", color="#f9a825"];
+    exito [label="Éxito +\nconsultas enviadas"];
+    errval [label="Error de\nvalidación", fillcolor="#ffebee", color="#c62828"];
+    errenv [label="Error de\nenvío", fillcolor="#ffebee", color="#c62828"];
+  }
+  inicio -> catalogo; catalogo -> ficha; ficha -> compra;
+  inicio -> form [label="menú Contacto"];
+  form -> errval [label="campo vacío"];
+  errval -> form [label="corregir"];
+  form -> enviando [label="submit válido"];
+  enviando -> exito [label="respuesta ok"];
+  enviando -> errenv [label="HTTP / red"];
+  errenv -> form [label="reintentar"];
+  exito -> form [label="nueva consulta"];
+}

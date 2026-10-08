@@ -1,0 +1,10 @@
+digraph eorm {
+  rankdir=LR; bgcolor="white"; pad=0.2; nodesep=0.4; ranksep=0.7;
+  node [shape=record, style=filled, fillcolor="#ffffff", color="#2e7d32", fontname="Liberation Serif", fontsize=12];
+  edge [color="#2e7d32", fontname="Liberation Serif", fontsize=11, dir=none];
+  cliente [label="Cliente|nombre\le-mail\l"];
+  servicio [label="Servicio|nombre\l"];
+  consulta [label="«enlace» Consulta|texto\lfecha\lestado\l", fillcolor="#e8f5e9", penwidth=2];
+  cliente -> consulta [label="1          N"];
+  consulta -> servicio [label="N          1"];
+}
