@@ -1,20 +1,4 @@
-/* =========================================================
-   Veterinaria Patitas - Hoja de estilos compartida
-   ========================================================= */
-
-:root {
-  --verde-oscuro: #1b5e20;
-  --verde: #2e7d32;
-  --verde-medio: #43a047;
-  --verde-claro: #e8f5e9;
-  --verde-borde: #c8e6c9;
-  --texto: #263238;
-  --texto-suave: #546e7a;
-  --blanco: #ffffff;
-  --fondo: #f6faf6;
-  --radio: 10px;
-  --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
+/* Estilos Veterinaria Patitas */
 
 * {
   margin: 0;
@@ -24,8 +8,8 @@
 
 body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  color: var(--texto);
-  background-color: var(--fondo);
+  color: #263238;
+  background-color: #f6faf6;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -33,14 +17,14 @@ body {
 }
 
 a {
-  color: var(--verde);
+  color: #2e7d32;
 }
 
-/* ---------- Encabezado y menú ---------- */
+/* Encabezado y menú */
 header {
-  background-color: var(--verde);
-  color: var(--blanco);
-  box-shadow: var(--sombra);
+  background-color: #2e7d32;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-contenido {
@@ -57,7 +41,7 @@ header {
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
-  color: var(--blanco);
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -74,7 +58,7 @@ nav ul {
 
 nav a {
   display: block;
-  color: var(--blanco);
+  color: #ffffff;
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 6px;
@@ -83,10 +67,10 @@ nav a {
 
 nav a:hover,
 nav a.activo {
-  background-color: var(--verde-oscuro);
+  background-color: #1b5e20;
 }
 
-/* ---------- Contenido principal ---------- */
+/* Contenido principal */
 main {
   flex: 1;
   width: 100%;
@@ -96,25 +80,25 @@ main {
 }
 
 h1 {
-  color: var(--verde-oscuro);
+  color: #1b5e20;
   margin-bottom: 8px;
 }
 
 h2 {
-  color: var(--verde);
+  color: #2e7d32;
   margin-bottom: 12px;
 }
 
 .subtitulo {
-  color: var(--texto-suave);
+  color: #546e7a;
   margin-bottom: 24px;
 }
 
-/* ---------- Botones ---------- */
+/* Botones */
 .boton {
   display: inline-block;
-  background-color: var(--verde);
-  color: var(--blanco);
+  background-color: #2e7d32;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
   border: none;
@@ -125,31 +109,31 @@ h2 {
 }
 
 .boton:hover {
-  background-color: var(--verde-oscuro);
+  background-color: #1b5e20;
 }
 
 .boton-secundario {
-  background-color: var(--blanco);
-  color: var(--verde);
-  border: 2px solid var(--verde);
+  background-color: #ffffff;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
 }
 
 .boton-secundario:hover {
-  background-color: var(--verde-claro);
+  background-color: #e8f5e9;
 }
 
-/* ---------- Portada ---------- */
+/* Portada */
 .hero {
-  background: linear-gradient(135deg, var(--verde-medio), var(--verde-oscuro));
-  color: var(--blanco);
-  border-radius: var(--radio);
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  color: #ffffff;
+  border-radius: 10px;
   padding: 56px 32px;
   text-align: center;
   margin-bottom: 32px;
 }
 
 .hero h1 {
-  color: var(--blanco);
+  color: #ffffff;
   font-size: 2.2rem;
 }
 
@@ -160,13 +144,13 @@ h2 {
 }
 
 .hero .boton {
-  background-color: var(--blanco);
-  color: var(--verde-oscuro);
+  background-color: #ffffff;
+  color: #1b5e20;
   font-weight: bold;
 }
 
 .hero .boton:hover {
-  background-color: var(--verde-claro);
+  background-color: #e8f5e9;
 }
 
 .servicios {
@@ -177,24 +161,24 @@ h2 {
 
 .servicio {
   flex: 1 1 220px;
-  background-color: var(--blanco);
-  border-left: 5px solid var(--verde-medio);
-  border-radius: var(--radio);
+  background-color: #ffffff;
+  border-left: 5px solid #43a047;
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: var(--sombra);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .servicio h3 {
-  color: var(--verde-oscuro);
+  color: #1b5e20;
   margin-bottom: 6px;
 }
 
-/* ---------- Listado en tabla ---------- */
+/* Listado en tabla */
 .tabla-contenedor {
   overflow-x: auto;
-  background-color: var(--blanco);
-  border-radius: var(--radio);
-  box-shadow: var(--sombra);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 table {
@@ -206,16 +190,16 @@ th,
 td {
   padding: 12px 16px;
   text-align: left;
-  border-bottom: 1px solid var(--verde-borde);
+  border-bottom: 1px solid #c8e6c9;
 }
 
 th {
-  background-color: var(--verde);
-  color: var(--blanco);
+  background-color: #2e7d32;
+  color: #ffffff;
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--verde-claro);
+  background-color: #e8f5e9;
 }
 
 tbody tr:hover {
@@ -224,11 +208,11 @@ tbody tr:hover {
 
 .precio {
   font-weight: bold;
-  color: var(--verde-oscuro);
+  color: #1b5e20;
   white-space: nowrap;
 }
 
-/* ---------- Listado en box (flexbox) ---------- */
+/* Listado en box (flexbox) */
 .contenedor-box {
   display: flex;
   flex-wrap: wrap;
@@ -238,31 +222,26 @@ tbody tr:hover {
 .box {
   flex: 1 1 200px;
   max-width: 260px;
-  background-color: var(--blanco);
-  border: 1px solid var(--verde-borde);
-  border-radius: var(--radio);
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: var(--sombra);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition: transform 0.2s;
-}
-
-.box:hover {
-  transform: translateY(-4px);
 }
 
 .box h3 {
-  color: var(--verde-oscuro);
+  color: #1b5e20;
   font-size: 1.05rem;
 }
 
 .categoria {
   display: inline-block;
   align-self: flex-start;
-  background-color: var(--verde-claro);
-  color: var(--verde);
+  background-color: #e8f5e9;
+  color: #2e7d32;
   font-size: 0.85rem;
   padding: 2px 10px;
   border-radius: 20px;
@@ -277,27 +256,27 @@ tbody tr:hover {
   text-align: center;
 }
 
-/* ---------- Ficha de producto ---------- */
+/* Ficha de producto */
 .ficha {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  background-color: var(--blanco);
-  border-radius: var(--radio);
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 32px;
-  box-shadow: var(--sombra);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .ficha-imagen {
   flex: 1 1 260px;
   min-height: 240px;
-  background-color: var(--verde-claro);
-  border: 2px dashed var(--verde-borde);
-  border-radius: var(--radio);
+  background-color: #e8f5e9;
+  border: 2px dashed #c8e6c9;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--verde);
+  color: #2e7d32;
   font-weight: bold;
 }
 
@@ -311,7 +290,7 @@ tbody tr:hover {
 
 .ficha-datos dt {
   font-weight: bold;
-  color: var(--verde-oscuro);
+  color: #1b5e20;
 }
 
 .ficha-datos dd {
@@ -329,24 +308,24 @@ tbody tr:hover {
   margin-top: 16px;
 }
 
-/* ---------- Formularios ---------- */
+/* Formularios */
 .formulario {
-  background-color: var(--blanco);
-  border-radius: var(--radio);
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 32px;
-  box-shadow: var(--sombra);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   max-width: 720px;
 }
 
 fieldset {
-  border: 1px solid var(--verde-borde);
-  border-radius: var(--radio);
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
   padding: 16px 20px;
   margin-bottom: 20px;
 }
 
 legend {
-  color: var(--verde);
+  color: #2e7d32;
   font-weight: bold;
   padding: 0 8px;
 }
@@ -379,7 +358,7 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--verde-medio);
+  border-color: #43a047;
   box-shadow: 0 0 0 3px rgba(67, 160, 71, 0.2);
 }
 
@@ -402,7 +381,7 @@ textarea:focus {
   justify-content: space-between;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px solid var(--verde-claro);
+  border-bottom: 1px solid #e8f5e9;
 }
 
 .item-producto:last-child {
@@ -421,7 +400,7 @@ textarea:focus {
   width: 70px;
 }
 
-/* ---------- Contacto y consultas ---------- */
+/* Contacto y consultas */
 .contacto-layout {
   display: flex;
   flex-wrap: wrap;
@@ -435,18 +414,18 @@ textarea:focus {
 
 .panel-consultas {
   flex: 1 1 260px;
-  background-color: var(--blanco);
-  border-radius: var(--radio);
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 24px;
-  box-shadow: var(--sombra);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .texto-suave {
-  color: var(--texto-suave);
+  color: #546e7a;
 }
 
 .campo-error {
-  border-color: #c62828 !important;
+  border-color: #c62828;
   background-color: #fff5f5;
 }
 
@@ -458,9 +437,9 @@ textarea:focus {
 }
 
 .mensaje.exito {
-  background-color: var(--verde-claro);
-  color: var(--verde-oscuro);
-  border-left: 5px solid var(--verde-medio);
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  border-left: 5px solid #43a047;
 }
 
 .mensaje.error {
@@ -482,7 +461,7 @@ textarea:focus {
 }
 
 .lista-consultas li {
-  border: 1px solid var(--verde-borde);
+  border: 1px solid #c8e6c9;
   border-radius: 8px;
   padding: 12px;
   display: flex;
@@ -493,31 +472,30 @@ textarea:focus {
 
 .lista-consultas li span {
   font-size: 0.85rem;
-  color: var(--texto-suave);
+  color: #546e7a;
 }
 
 .lista-consultas li p {
   width: 100%;
-  overflow-wrap: anywhere;
 }
 
 .lista-consultas .estado {
-  background-color: var(--verde-claro);
-  color: var(--verde) !important;
+  background-color: #e8f5e9;
+  color: #2e7d32;
   padding: 1px 8px;
   border-radius: 20px;
 }
 
-/* ---------- Pie de página ---------- */
+/* Pie de página */
 footer {
-  background-color: var(--verde-oscuro);
-  color: var(--blanco);
+  background-color: #1b5e20;
+  color: #ffffff;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
 }
 
-/* ---------- Adaptación a pantallas chicas ---------- */
+/* Adaptación a pantallas chicas */
 @media (max-width: 600px) {
   .header-contenido {
     flex-direction: column;
