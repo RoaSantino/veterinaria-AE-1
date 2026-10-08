@@ -2,49 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contacto - Veterinaria Patitas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas | Contacto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Veterinaria Patitas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="listado_tabla.html">Productos (tabla)</a>
-      <a href="listado_box.html">Productos (box)</a>
-      <a href="comprar.html">Comprar</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="header-contenido">
+      <a href="index.html" class="logo">🐾 Veterinaria <span>Patitas</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado_tabla.html">Productos (tabla)</a></li>
+          <li><a href="listado_box.html">Productos (box)</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <h2>Contacto y Consultas</h2>
+    <h1>Contacto y consultas</h1>
+    <p class="subtitulo">Escribinos tu consulta sobre cualquiera de nuestros servicios y te respondemos por e-mail.</p>
 
-    <!-- Sin onclick ni onsubmit: los eventos se capturan en app.js -->
-    <form id="formContacto">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre">
+    <div class="contacto-layout">
+      <!-- Los eventos del formulario se registran en app.js con addEventListener -->
+      <form id="form-consulta" class="formulario" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez">
+        </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email">
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+        </div>
 
-      <label for="servicio">Servicio</label>
-      <select id="servicio">
-        <option value="Consulta general">Consulta general</option>
-        <option value="Vacunación">Vacunación</option>
-        <option value="Peluquería">Peluquería</option>
-        <option value="Cirugía">Cirugía</option>
-      </select>
+        <div class="campo">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio">
+            <option value="">Elegí un servicio</option>
+            <option value="Consulta general">Consulta general</option>
+            <option value="Vacunación">Vacunación</option>
+            <option value="Peluquería">Peluquería</option>
+            <option value="Cirugía">Cirugía</option>
+          </select>
+        </div>
 
-      <label for="consulta">Consulta</label>
-      <textarea id="consulta" rows="4"></textarea>
+        <div class="campo">
+          <label for="consulta">Consulta</label>
+          <textarea id="consulta" name="consulta" rows="5" placeholder="Contanos qué necesitás"></textarea>
+        </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+        <div id="mensaje" class="mensaje" role="status" aria-live="polite" hidden></div>
 
-    <div id="mensaje"></div>
+        <div class="acciones">
+          <button type="submit" id="btn-enviar" class="boton">Enviar consulta</button>
+          <button type="reset" class="boton boton-secundario">Limpiar</button>
+        </div>
+      </form>
+
+      <aside class="panel-consultas">
+        <h2>Consultas enviadas</h2>
+        <p id="sin-consultas" class="texto-suave">Todavía no enviaste consultas en esta visita.</p>
+        <ul id="lista-consultas" class="lista-consultas"></ul>
+      </aside>
+    </div>
   </main>
-  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+
+  <footer>
+    <p>&copy; 2026 Veterinaria Patitas &mdash; Posadas, Misiones</p>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>

@@ -2,27 +2,60 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inicio - Veterinaria Patitas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas | Inicio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Veterinaria Patitas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="listado_tabla.html">Productos (tabla)</a>
-      <a href="listado_box.html">Productos (box)</a>
-      <a href="comprar.html">Comprar</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="header-contenido">
+      <a href="index.html" class="logo">🐾 Veterinaria <span>Patitas</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="listado_tabla.html">Productos (tabla)</a></li>
+          <li><a href="listado_box.html">Productos (box)</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <h2>Bienvenido</h2>
-    <p>Somos una veterinaria que también ofrece una tienda online con alimentos, accesorios e higiene para tu mascota.</p>
-    <p>Mirá nuestros productos en formato lista o en formato tarjetas, y comprá desde tu casa.</p>
-    <a class="boton" href="listado_box.html">Ver productos</a>
+    <section class="hero">
+      <h1>Bienvenidos a Veterinaria Patitas</h1>
+      <p>Cuidamos a tus mascotas en Posadas, Misiones. Ahora también podés comprar alimentos, productos de sanidad, higiene y accesorios desde tu casa.</p>
+      <a href="listado_box.html" class="boton">Ver catálogo</a>
+    </section>
+
+    <section>
+      <h2>Nuestros servicios</h2>
+      <div class="servicios">
+        <article class="servicio">
+          <h3>Consulta general</h3>
+          <p>Controles de rutina y atención clínica para perros y gatos.</p>
+        </article>
+        <article class="servicio">
+          <h3>Vacunación</h3>
+          <p>Planes de vacunación completos y seguimiento de calendario.</p>
+        </article>
+        <article class="servicio">
+          <h3>Peluquería</h3>
+          <p>Baño, corte y cuidado del pelaje de tu mascota.</p>
+        </article>
+        <article class="servicio">
+          <h3>Cirugía</h3>
+          <p>Intervenciones programadas con profesionales especializados.</p>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+
+  <footer>
+    <p>&copy; 2026 Veterinaria Patitas &mdash; Posadas, Misiones</p>
+  </footer>
+
 </body>
 </html>

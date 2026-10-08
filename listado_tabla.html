@@ -2,32 +2,86 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Productos en tabla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas | Productos en tabla</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Veterinaria Patitas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="listado_tabla.html">Productos (tabla)</a>
-      <a href="listado_box.html">Productos (box)</a>
-      <a href="comprar.html">Comprar</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="header-contenido">
+      <a href="index.html" class="logo">🐾 Veterinaria <span>Patitas</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado_tabla.html" class="activo">Productos (tabla)</a></li>
+          <li><a href="listado_box.html">Productos (box)</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <h2>Listado de productos</h2>
-    <table>
-      <tr><th>Código</th><th>Producto</th><th>Categoría</th><th>Precio</th><th>Ficha</th></tr>
-      <tr><td>1</td><td>Alimento balanceado perro adulto 15kg</td><td>Alimentos</td><td>$45.000</td><td><a href="producto.html">Ver</a></td></tr>
-      <tr><td>2</td><td>Alimento balanceado gato 7,5kg</td><td>Alimentos</td><td>$32.000</td><td><a href="producto.html">Ver</a></td></tr>
-      <tr><td>3</td><td>Collar antipulgas</td><td>Sanidad</td><td>$8.500</td><td><a href="producto.html">Ver</a></td></tr>
-      <tr><td>4</td><td>Shampoo para mascotas</td><td>Higiene</td><td>$6.200</td><td><a href="producto.html">Ver</a></td></tr>
-      <tr><td>5</td><td>Correa reforzada</td><td>Accesorios</td><td>$7.000</td><td><a href="producto.html">Ver</a></td></tr>
-    </table>
+    <h1>Catálogo de productos</h1>
+    <p class="subtitulo">Listado completo de productos disponibles en formato tabla.</p>
+
+    <div class="tabla-contenedor">
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Alimento balanceado perro adulto 15 kg</td>
+            <td>Alimentos</td>
+            <td class="precio">$45.000</td>
+            <td><a href="producto.html">Ver ficha</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Alimento balanceado gato 7,5 kg</td>
+            <td>Alimentos</td>
+            <td class="precio">$32.000</td>
+            <td><a href="producto.html">Ver ficha</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Collar antipulgas</td>
+            <td>Sanidad</td>
+            <td class="precio">$8.500</td>
+            <td><a href="producto.html">Ver ficha</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Shampoo para mascotas</td>
+            <td>Higiene</td>
+            <td class="precio">$6.200</td>
+            <td><a href="producto.html">Ver ficha</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Correa reforzada</td>
+            <td>Accesorios</td>
+            <td class="precio">$7.000</td>
+            <td><a href="producto.html">Ver ficha</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
-  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+
+  <footer>
+    <p>&copy; 2026 Veterinaria Patitas &mdash; Posadas, Misiones</p>
+  </footer>
+
 </body>
 </html>

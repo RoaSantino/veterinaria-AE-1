@@ -2,56 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Productos en box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas | Productos en box</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Veterinaria Patitas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="listado_tabla.html">Productos (tabla)</a>
-      <a href="listado_box.html">Productos (box)</a>
-      <a href="comprar.html">Comprar</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Nuestros productos</h2>
-    <div class="contenedor-box">
-      <div class="box">
-        <h3>Alimento perro adulto 15kg</h3>
-        <p>Alimentos</p>
-        <p class="precio">$45.000</p>
-        <a class="boton" href="producto.html">Ver ficha</a>
-      </div>
-      <div class="box">
-        <h3>Alimento gato 7,5kg</h3>
-        <p>Alimentos</p>
-        <p class="precio">$32.000</p>
-        <a class="boton" href="producto.html">Ver ficha</a>
-      </div>
-      <div class="box">
-        <h3>Collar antipulgas</h3>
-        <p>Sanidad</p>
-        <p class="precio">$8.500</p>
-        <a class="boton" href="producto.html">Ver ficha</a>
-      </div>
-      <div class="box">
-        <h3>Shampoo para mascotas</h3>
-        <p>Higiene</p>
-        <p class="precio">$6.200</p>
-        <a class="boton" href="producto.html">Ver ficha</a>
-      </div>
-      <div class="box">
-        <h3>Correa reforzada</h3>
-        <p>Accesorios</p>
-        <p class="precio">$7.000</p>
-        <a class="boton" href="producto.html">Ver ficha</a>
-      </div>
+    <div class="header-contenido">
+      <a href="index.html" class="logo">🐾 Veterinaria <span>Patitas</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado_tabla.html">Productos (tabla)</a></li>
+          <li><a href="listado_box.html" class="activo">Productos (box)</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <h1>Catálogo de productos</h1>
+    <p class="subtitulo">Listado completo de productos disponibles en formato de tarjetas.</p>
+
+    <section class="contenedor-box">
+      <article class="box">
+        <span class="categoria">Alimentos</span>
+        <h3>Alimento balanceado perro adulto 15 kg</h3>
+        <p class="precio">$45.000</p>
+        <a href="producto.html" class="boton">Ver ficha</a>
+      </article>
+
+      <article class="box">
+        <span class="categoria">Alimentos</span>
+        <h3>Alimento balanceado gato 7,5 kg</h3>
+        <p class="precio">$32.000</p>
+        <a href="producto.html" class="boton">Ver ficha</a>
+      </article>
+
+      <article class="box">
+        <span class="categoria">Sanidad</span>
+        <h3>Collar antipulgas</h3>
+        <p class="precio">$8.500</p>
+        <a href="producto.html" class="boton">Ver ficha</a>
+      </article>
+
+      <article class="box">
+        <span class="categoria">Higiene</span>
+        <h3>Shampoo para mascotas</h3>
+        <p class="precio">$6.200</p>
+        <a href="producto.html" class="boton">Ver ficha</a>
+      </article>
+
+      <article class="box">
+        <span class="categoria">Accesorios</span>
+        <h3>Correa reforzada</h3>
+        <p class="precio">$7.000</p>
+        <a href="producto.html" class="boton">Ver ficha</a>
+      </article>
+    </section>
   </main>
-  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+
+  <footer>
+    <p>&copy; 2026 Veterinaria Patitas &mdash; Posadas, Misiones</p>
+  </footer>
+
 </body>
 </html>

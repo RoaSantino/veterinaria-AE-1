@@ -2,53 +2,110 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Comprar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas | Comprar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Veterinaria Patitas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="listado_tabla.html">Productos (tabla)</a>
-      <a href="listado_box.html">Productos (box)</a>
-      <a href="comprar.html">Comprar</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="header-contenido">
+      <a href="index.html" class="logo">🐾 Veterinaria <span>Patitas</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado_tabla.html">Productos (tabla)</a></li>
+          <li><a href="listado_box.html">Productos (box)</a></li>
+          <li><a href="comprar.html" class="activo">Comprar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <h2>Formulario de compra</h2>
-    <form action="#" method="post">
-      <label for="nombre">Nombre del cliente</label>
-      <input type="text" id="nombre" name="nombre">
+    <h1>Formulario de compra</h1>
+    <p class="subtitulo">Completá tus datos y elegí los productos que querés recibir.</p>
 
-      <label for="direccion">Dirección</label>
-      <input type="text" id="direccion" name="direccion">
+    <form class="formulario" action="#" method="post">
 
-      <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" name="telefono">
+      <fieldset>
+        <legend>Datos del cliente</legend>
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email">
+        <div class="campo">
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+        </div>
 
-      <label for="pago">Medio de pago</label>
-      <select id="pago" name="pago">
-        <option value="efectivo">Efectivo</option>
-        <option value="tarjeta">Tarjeta</option>
-        <option value="transferencia">Transferencia</option>
-      </select>
+        <div class="campo">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Calle, número, barrio" required>
+        </div>
 
-      <label>Productos</label>
-      <label class="opcion"><input type="checkbox" name="productos" value="1"> Alimento perro adulto 15kg - $45.000</label>
-      <label class="opcion"><input type="checkbox" name="productos" value="2"> Alimento gato 7,5kg - $32.000</label>
-      <label class="opcion"><input type="checkbox" name="productos" value="3"> Collar antipulgas - $8.500</label>
-      <label class="opcion"><input type="checkbox" name="productos" value="4"> Shampoo para mascotas - $6.200</label>
-      <label class="opcion"><input type="checkbox" name="productos" value="5"> Correa reforzada - $7.000</label>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3764 123456" required>
+        </div>
 
-      <button type="submit">Confirmar compra</button>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Medio de pago</legend>
+        <div class="opciones-pago">
+          <label><input type="radio" name="pago" value="efectivo" checked> Efectivo</label>
+          <label><input type="radio" name="pago" value="tarjeta"> Tarjeta</label>
+          <label><input type="radio" name="pago" value="transferencia"> Transferencia</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Listado de productos</legend>
+
+        <div class="item-producto">
+          <label><input type="checkbox" name="productos" value="1"> Alimento balanceado perro adulto 15 kg &mdash; <strong>$45.000</strong></label>
+          <input type="number" name="cantidad_1" min="1" value="1" aria-label="Cantidad producto 1">
+        </div>
+
+        <div class="item-producto">
+          <label><input type="checkbox" name="productos" value="2"> Alimento balanceado gato 7,5 kg &mdash; <strong>$32.000</strong></label>
+          <input type="number" name="cantidad_2" min="1" value="1" aria-label="Cantidad producto 2">
+        </div>
+
+        <div class="item-producto">
+          <label><input type="checkbox" name="productos" value="3"> Collar antipulgas &mdash; <strong>$8.500</strong></label>
+          <input type="number" name="cantidad_3" min="1" value="1" aria-label="Cantidad producto 3">
+        </div>
+
+        <div class="item-producto">
+          <label><input type="checkbox" name="productos" value="4"> Shampoo para mascotas &mdash; <strong>$6.200</strong></label>
+          <input type="number" name="cantidad_4" min="1" value="1" aria-label="Cantidad producto 4">
+        </div>
+
+        <div class="item-producto">
+          <label><input type="checkbox" name="productos" value="5"> Correa reforzada &mdash; <strong>$7.000</strong></label>
+          <input type="number" name="cantidad_5" min="1" value="1" aria-label="Cantidad producto 5">
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="observaciones">Observaciones (opcional)</label>
+        <textarea id="observaciones" name="observaciones" rows="3" placeholder="Horario de entrega, aclaraciones, etc."></textarea>
+      </div>
+
+      <div class="acciones">
+        <button type="submit" class="boton">Confirmar compra</button>
+        <button type="reset" class="boton boton-secundario">Limpiar</button>
+      </div>
     </form>
   </main>
-  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+
+  <footer>
+    <p>&copy; 2026 Veterinaria Patitas &mdash; Posadas, Misiones</p>
+  </footer>
+
 </body>
 </html>

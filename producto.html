@@ -2,36 +2,65 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ficha de producto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Patitas | Ficha de producto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Veterinaria Patitas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="listado_tabla.html">Productos (tabla)</a>
-      <a href="listado_box.html">Productos (box)</a>
-      <a href="comprar.html">Comprar</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Ficha del producto</h2>
-    <div class="ficha">
-      <div>
-        <h3>Alimento balanceado perro adulto 15kg</h3>
-        <p><strong>Código:</strong> 1</p>
-        <p><strong>Categoría:</strong> Alimentos</p>
-        <p><strong>Descripción:</strong> Alimento completo para perros adultos de todas las razas. Rico en proteínas, con vitaminas y minerales.</p>
-        <p><strong>Stock:</strong> Disponible</p>
-        <p class="precio">Precio: $45.000</p>
-        <a class="boton" href="comprar.html">Comprar</a>
-        <a class="boton" href="listado_box.html">Volver</a>
-      </div>
+    <div class="header-contenido">
+      <a href="index.html" class="logo">🐾 Veterinaria <span>Patitas</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listado_tabla.html">Productos (tabla)</a></li>
+          <li><a href="listado_box.html">Productos (box)</a></li>
+          <li><a href="comprar.html">Comprar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <section class="ficha">
+      <div class="ficha-imagen">
+        <p>Imagen del producto</p>
+      </div>
+
+      <div class="ficha-datos">
+        <span class="categoria">Alimentos</span>
+        <h1>Alimento balanceado perro adulto 15 kg</h1>
+
+        <dl>
+          <dt>Código</dt>
+          <dd>1</dd>
+
+          <dt>Categoría</dt>
+          <dd>Alimentos</dd>
+
+          <dt>Descripción</dt>
+          <dd>Alimento completo y balanceado para perros adultos de todas las razas. Aporta proteínas, vitaminas y minerales para una nutrición diaria saludable. Bolsa de 15 kg.</dd>
+
+          <dt>Stock</dt>
+          <dd>12 unidades disponibles</dd>
+
+          <dt>Precio</dt>
+          <dd class="precio">$45.000</dd>
+        </dl>
+
+        <div class="acciones">
+          <a href="comprar.html" class="boton">Comprar</a>
+          <a href="listado_box.html" class="boton boton-secundario">Volver al listado</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>Veterinaria Patitas - Posadas, Misiones</footer>
+
+  <footer>
+    <p>&copy; 2026 Veterinaria Patitas &mdash; Posadas, Misiones</p>
+  </footer>
+
 </body>
 </html>
